@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DVBSchedule>
+  <DocumentVersion exportTime="2017-12-21T16:14:44+00:00" version="01"/>
+  <Schedule serviceId="8050">
+    <TimePeriod startTime="2018-01-01T06:00:00+00:00" endTime="2018-01-02T06:00:00+00:00"/>
+    <ScheduleEvent eventId="6262" billedStartTime="2018-01-01T06:00:00+00:00" billedDuration="PT12H" schedStartTime="2018-01-01T06:00:00+00:00" schedDuration="PT12H">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sheffield Live! Now" text="News, events photo features, plus Sheffield Live! community radio"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="02"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="6263" billedStartTime="2018-01-01T18:00:00+00:00" billedDuration="PT5M" schedStartTime="2018-01-01T18:00:00+00:00" schedDuration="PT5M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sheffield Live! Headlines" text="Today's news headlines"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="02"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="6264" billedStartTime="2018-01-01T18:05:00+00:00" billedDuration="PT25M" schedStartTime="2018-01-01T18:05:00+00:00" schedDuration="PT25M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sheffield Live Mix" text="Sheffield music and film shorts"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="03"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="6265" billedStartTime="2018-01-01T18:30:00+00:00" billedDuration="PT5M" schedStartTime="2018-01-01T18:30:00+00:00" schedDuration="PT5M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sheffield Live! Headlines" text="Today's news headlines"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="02"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="6266" billedStartTime="2018-01-01T18:35:00+00:00" billedDuration="PT25M" schedStartTime="2018-01-01T18:35:00+00:00" schedDuration="PT25M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sheffield Live! News" text="Today's news from the Sheffield city region"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="02"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="6267" billedStartTime="2018-01-01T19:00:00+00:00" billedDuration="PT5M" schedStartTime="2018-01-01T19:00:00+00:00" schedDuration="PT5M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sheffield Live! Headlines" text="Today's news headlines"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="02"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="6268" billedStartTime="2018-01-01T19:05:00+00:00" billedDuration="PT55M" schedStartTime="2018-01-01T19:05:00+00:00" schedDuration="PT55M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sheffield Live! Mix" text="Sheffield music and film shorts"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="03"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="6269" billedStartTime="2018-01-01T20:00:00+00:00" billedDuration="PT1H30M" schedStartTime="2018-01-01T20:00:00+00:00" schedDuration="PT1H30M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sharks Basketball" text="Highlights of this weeks Sharks basketball"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="00"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="626a" billedStartTime="2018-01-01T21:30:00+00:00" billedDuration="PT30M" schedStartTime="2018-01-01T21:30:00+00:00" schedDuration="PT30M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Up North" text="Sitcom set in South Yorkshire about two neighbors."/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="03"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="626b" billedStartTime="2018-01-01T22:00:00+00:00" billedDuration="PT30M" schedStartTime="2018-01-01T22:00:00+00:00" schedDuration="PT30M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="The Debate Forum" text="Arabic language magazine programme"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="03"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="626c" billedStartTime="2018-01-01T22:30:00+00:00" billedDuration="PT30M" schedStartTime="2018-01-01T22:30:00+00:00" schedDuration="PT30M">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sheffield Live! News" text="Today's news from the Sheffield city region"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="02"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="626d" billedStartTime="2018-01-01T23:00:00+00:00" billedDuration="PT1H" schedStartTime="2018-01-01T23:00:00+00:00" schedDuration="PT1H">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Two Weeks To Make It" text="25 bands. 25 filmmakers. They've never met before and now they have two weeks to make a music video from start to finish. It's impressive what can be done in two weeks....but who will win?"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="03"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="626e" billedStartTime="2018-01-02T00:00:00+00:00" billedDuration="PT1H" schedStartTime="2018-01-02T00:00:00+00:00" schedDuration="PT1H">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Global News Hour" text="International news from Democracy Now"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="02"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+    <ScheduleEvent eventId="626f" billedStartTime="2018-01-02T01:00:00+00:00" billedDuration="PT5H" schedStartTime="2018-01-02T01:00:00+00:00" schedDuration="PT5H">
+      <DVBEITDescriptors>
+        <ShortEventDescriptor language="eng" eventName="Sheffield Live! Now" text="News, events photo features, plus Sheffield Live! community radio"/>
+        <ComponentDescriptor content="01" type="03" language="eng" componentTag="01"/>
+        <ComponentDescriptor content="02" type="03" language="eng" componentTag="02"/>
+        <ContentDescriptor level1="02"/>
+      </DVBEITDescriptors>
+    </ScheduleEvent>
+  </Schedule>
+</DVBSchedule>
