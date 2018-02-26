@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+
+# Used for date formatting
+gem 'I18n', '0.9.4'
