@@ -3,8 +3,8 @@ module Ingest
     class Date
 
       def self.create_date_object_from_string(date_string)
-        ary = split_date_string_into_array(date_string)
-        formatted_date = format_date_array(ary)
+        date_array = split_date_string_into_array(date_string)
+        formatted_date = format_date_array(date_array)
         Object::Date.new(*required_date_elements(formatted_date))
       end
 
@@ -13,10 +13,6 @@ module Ingest
       end
 
       def self.format_date_array(date_array)
-        # date_array.map do |elem|
-        #   date_array.index(elem) == 2 ? index_of_abbreviated_month(elem) : elem
-        #   date_array.index(elem) == 3 ? expand_two_digit_year(elem, 2000) : elem
-        # end
         ary = date_array
         [
           ary[0],
@@ -39,7 +35,7 @@ module Ingest
       end
 
       def self.abbreviated_day_names
-        Object::Date::ABBR_DAYNAMES
+        [nil, Object::Date::ABBR_DAYNAMES.rotate].flatten
       end
 
       def self.required_date_elements(formatted_date_array)

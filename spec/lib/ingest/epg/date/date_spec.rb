@@ -18,19 +18,30 @@ RSpec.describe do
     end
 
     describe '.split_date_string_into_array(date_string)' do
-      it 'takes abbreviated date string of format "Mon 1 Jan 18" and splits the sections into an array'
+      it 'takes abbreviated date string of format "Mon 1 Jan 18" and splits the sections into an array' do
+        expect(Ingest::EPG::Date.split_date_string_into_array(date_string)).to eq(["Thu", "1", "Feb", "18"])
+      end
     end
 
     describe '.index_of_abbreviated_month(abbreviated_month)' do
-      it 'recieves an abbreviated month and returns the index of it in the year'
+      it 'recieves an abbreviated month and returns the index of it in the year' do
+        expect(Ingest::EPG::Date.index_of_abbreviated_month("Jun")).to eq(6)
+        expect(Ingest::EPG::Date.index_of_abbreviated_month("Dec")).to eq(12)
+      end
     end
 
     describe '.abbreviated_month_names' do
-      it 'returns an array of valid month abbreviations'
+      it 'returns an array of valid month abbreviations' do
+        expect(Ingest::EPG::Date.abbreviated_month_names[7]).to eq("Jul")
+        expect(Ingest::EPG::Date.abbreviated_month_names[10]).to eq("Oct")
+      end
     end
 
     describe '.index_of_abbreviated_day(abbreviated_day)' do
-      it 'recieves an abbreviated month and returns the index of it in the year'
+      it 'recieves an abbreviated month and returns the index of it in the year' do
+        expect(Ingest::EPG::Date.index_of_abbreviated_day("Mon")).to eq(1)
+        expect(Ingest::EPG::Date.index_of_abbreviated_day("Sun")).to eq(7)
+      end
     end
 
     describe '.abbreviated_day_names' do
@@ -42,6 +53,7 @@ RSpec.describe do
         expect(Ingest::EPG::Date::expand_two_digit_year(17, 2000)).to eq("2017")
         expect(Ingest::EPG::Date::expand_two_digit_year(27, 1952)).to eq("1927")
       end
+
     end
 
   end
