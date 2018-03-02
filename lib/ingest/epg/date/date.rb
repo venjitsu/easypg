@@ -1,6 +1,7 @@
 module Ingest  
   class EPG 
     class Date
+      require_relative './validator/validator'
 
       def self.create_date_object_from_string(date_string)
         date_array = split_date_string_into_array(date_string)

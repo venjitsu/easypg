@@ -4,6 +4,10 @@ RSpec.describe do
   describe Ingest::EPG::Date do
     let(:date_string) { 'Thu 1 Feb 18' }
 
+    it 'has access to the  Ingest::EPG::Date::Validator' do
+      expect(Ingest::EPG::Date::Validator.respond_to?(:class)).to eq(true)
+    end
+
     describe '.create_date_object_from_string(date_string)' do
       let(:date_object) { Ingest::EPG::Date::create_date_object_from_string(date_string) }
       it 'returns a date object' do
@@ -53,7 +57,6 @@ RSpec.describe do
         expect(Ingest::EPG::Date::expand_two_digit_year(17, 2000)).to eq("2017")
         expect(Ingest::EPG::Date::expand_two_digit_year(27, 1952)).to eq("1927")
       end
-
     end
 
   end
