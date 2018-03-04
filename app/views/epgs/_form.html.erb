@@ -1,0 +1,23 @@
+<%= form_for(@epg, html: { multipart: true } ) do |form| %>
+  <% if epg.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(epg.errors.count, "error") %> prohibited this service from being saved:</h2>
+
+      <ul>
+        <% epg.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.label :spreadsheet %>
+  <%= form.file_field :spreadsheet %>
+  <%= form.hidden_field :spreadsheet_cache %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+<% end %>
+

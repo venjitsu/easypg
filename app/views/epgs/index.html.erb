@@ -1,0 +1,6 @@
+<h1>Epg Spreadsheets</h2>
+<%= link_to "Upload new epg", new_epg_path%>
+
+<% @epgs.each do |epg|%>
+  <%= epg %>
+<% end %>

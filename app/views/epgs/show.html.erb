@@ -1,0 +1,15 @@
+<h1>Epg</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @epg.spreadsheet.url %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @epg.created_at %>
+</p>
+
+<%# <%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', epgs_path %>
