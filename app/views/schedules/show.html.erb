@@ -3,8 +3,19 @@
 
 <h2><%= @schedule.date %></h2>
 
-<ul>
-  <% @schedule.events.each do |event| %>
-    <li><%= event.title %></li>
-  <% end %>
-</ul>
+<table>
+  <thead>
+    <tr class="justify-centre">
+      <th width="140">Start Time</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @schedule.events.each do |event| %>
+      <tr>
+        <td>00:00</td>
+        <td><%= event.title %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
