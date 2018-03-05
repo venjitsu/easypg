@@ -1,0 +1,7 @@
+<h1>Schedules</h1>
+
+<ul>
+  <% @schedules.each do |schedule| %>
+      <li><%= link_to schedule.date, schedule  %></li>
+  <% end %>
+</ul>
