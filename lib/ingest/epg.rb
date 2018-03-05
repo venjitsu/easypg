@@ -1,4 +1,3 @@
-require 'pry'
 module Ingest
   class EPG
     require 'csv'
