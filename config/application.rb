@@ -16,5 +16,6 @@ module Easypg
     # -- all .rb files in that directory are automatically loaded.
     
     require 'carrierwave/orm/activerecord'
+    config.autoload_paths << Rails.root.join('lib')
   end
 end
