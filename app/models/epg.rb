@@ -14,16 +14,16 @@ class Epg < ApplicationRecord
       schedule = Schedule.new(date: day[:date], uploaded: false,
                              service_id: 1) # Service stubbed)
       if schedule.save
-        day[:data].each do |ev|
+        day[:data].each do |row|
           ev = Event.new(
-            title: ev[1],
-            synopsis: ev[3],
-            certificate: ev[4],
-            genre: ev[5]
+            title: row[1],
+            synopsis: row[3],
+            certificate: row[4],
+            genre: row[5]
           )
           if ev.save 
             EventsSchedules.new(event: ev, schedule: schedule,
-                               start_time: ev[0]).save
+                               start_time: row[0]).save
           end
         end
       end
