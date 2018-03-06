@@ -17,3 +17,7 @@
 /yarn-error.log
 
 .byebug_history
+
+# Ignore uploads
+/public/uploads/epg/*
+/public/uploads/tmp/*
