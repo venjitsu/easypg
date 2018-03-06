@@ -1,6 +1,17 @@
 <h1>Epg Spreadsheets</h2>
 <%= link_to "Upload new epg", new_epg_path%>
 
-<% @epgs.each do |epg|%>
-  <%= epg %>
-<% end %>
+<table>
+  <thead>
+    <th>Filename</th>
+    <th>Saved</th>
+  </thead>
+  <tbody>
+    <% @epgs.each do |epg|%>
+      <tr>
+        <td><%= epg.spreadsheet %></td>
+        <td><%= epg.created_at.strftime("%H:%M:%S on %d/%m/%y")  %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
