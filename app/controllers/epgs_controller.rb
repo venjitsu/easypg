@@ -62,7 +62,7 @@ class EpgsController < ApplicationController
 
 
   def epg_params
-    params.require(:epg).permit( :spreadsheet )
+    params.require(:epg).permit( :spreadsheet, :spreadsheet_cache )
   end
 
 end

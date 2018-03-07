@@ -1,10 +1,17 @@
 class Epg < ApplicationRecord
   require 'ingest'
   mount_uploader :spreadsheet, SpreadsheetUploader
-  
+
   after_create :process_spreadsheet
+  before_save :set_checksum
+
+
 
   private
+
+  def set_checksum
+    self.checksum = Digest::SHA256::file(spreadsheet.path).hexdigest
+  end
 
   def process_spreadsheet
     epg_object = Ingest::EPG.new(self.spreadsheet.path)
