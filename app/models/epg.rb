@@ -18,7 +18,6 @@ class Epg < ApplicationRecord
     epg_object.arrange_into_days
 
     epg_object.days.each do |day|
-      byebug
       schedule = Schedule.new(date: day[:date], uploaded: false,
                              service_id: 2) # Service stubbed
       if schedule.save

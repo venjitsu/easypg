@@ -62,6 +62,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Add foundation framework for front-end 
 gem 'foundation-rails'
 
+# Use Carrierwave to handle file uploading
 gem 'carrierwave', '~>1.0'
+
+# Use Devise for to handle user management
+gem 'devise'
