@@ -11,14 +11,22 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class="active"><%= link_to "Sign Up", new_user_registration_path %></li>
-      <li class="has-dropdown">
-        <a href="#">Right Button Dropdown</a>
-        <ul class="dropdown">
-          <li><a href="#">First link in dropdown</a></li>
-          <li class="active"><a href="#">Active link in dropdown</a></li>
-        </ul>
-    </li>
+      <% if user_signed_in? %>
+        <li class="active"><%= link_to current_user.first_name, edit_user_registration_path %></li>
+      <% else %>>
+        <li class="active"><%= link_to "Sign Up", new_user_registration_path %></li>
+      <% end %>
+      <% if user_signed_in? %>
+        <li class="has-dropdown">
+          <a href="#">Right Button Dropdown</a>
+          <ul class="dropdown">
+            <li><a href="#">First link in dropdown</a></li>
+            <li class="active"><a href="#">Active link in dropdown</a></li>
+          </ul>
+      </li>
+    <% else %>>
+      <li><%= link_to "Log In", new_user_session_url %></li>
+    <% end %>
     </ul>
 
     <!-- Left Nav Section -->
