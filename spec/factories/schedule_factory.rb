@@ -1,7 +1,8 @@
 FactoryGirl.define do
   factory :schedule do
-    date Date.new(2017,01,01)
+    date "Mon 1 Jan 18"
     uploaded false
     service
+    epg
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180308164926) do
+ActiveRecord::Schema.define(version: 20180309181643) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,8 @@ ActiveRecord::Schema.define(version: 20180308164926) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "service_id"
+    t.bigint "epg_id"
+    t.index ["epg_id"], name: "index_schedules_on_epg_id"
     t.index ["service_id"], name: "index_schedules_on_service_id"
   end
 
@@ -86,5 +88,6 @@ ActiveRecord::Schema.define(version: 20180308164926) do
   add_foreign_key "event_schedules", "schedules"
   add_foreign_key "events_schedules", "events"
   add_foreign_key "events_schedules", "schedules"
+  add_foreign_key "schedules", "epgs"
   add_foreign_key "schedules", "services"
 end
