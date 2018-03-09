@@ -5,12 +5,14 @@
   <thead>
     <th>Filename</th>
     <th>Saved</th>
+    <th>Checksum</th>
   </thead>
   <tbody>
     <% @epgs.each do |epg|%>
       <tr>
         <td><%= epg.spreadsheet %></td>
         <td><%= epg.created_at.strftime("%H:%M:%S on %d/%m/%y")  %></td>
+        <td><%= epg.checksum %></td>
       </tr>
     <% end %>
   </tbody>
