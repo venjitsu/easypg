@@ -18,6 +18,8 @@
     </div>
   <% end -%>
 
+  <%= f.collection_select(:service_ids, Service.order(:name), :id, :name, prompt: true) %>
+
   <div class="actions">
     <%= f.submit "Log in" %>
   </div>
