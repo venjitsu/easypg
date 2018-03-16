@@ -2,7 +2,8 @@ class SchedulesController < ApplicationController
   before_action :set_schedule, only: [:show, :edit, :update, :destroy]
 
   def index
-    @schedules = Schedule.where(service: current_user.services)
+    # @schedules = Schedule.where(service: current_user.services)
+    @schedules = Schedule.all
   end
 
   def show

@@ -1,26 +1,19 @@
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><%= link_to "EASYPG", root_path %></h1>
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <ul>
-        <li><%= link_to "EPG", new_epg_path %></li>
-        <li><%= link_to "Schedules", schedules_path %></li>
-        <% if user_signed_in? %>
-          <li class="active"><%= link_to "Account", edit_user_registration_path %></li>
-        <% else %>>
-          <li class="active"><%= link_to "Sign Up", new_user_registration_path %></li>
-        <% end %>
-      </ul>
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="menu">
+      <li class="menu-text">EASYPG</li>
     </ul>
-
-  </section>
-</nav>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <% if user_signed_in? %>
+        <li><%= link_to "Schedules", schedules_url %></li>
+        <li><%= link_to "Epgs", epgs_url %></li>
+        <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Sign up", user_session_path, class: "button" %></li>
+        <li><%= link_to "Log in", user_session_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
