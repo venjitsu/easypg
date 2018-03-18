@@ -1,0 +1,8 @@
+<li>
+  <a href="#">Services</a>
+  <ul class="menu vertical">
+    <% current_user.services.each do |service| %>
+      <li><%= link_to service.name, service %></li>
+    <% end %>
+  </ul>
+</li>

@@ -4,7 +4,8 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.json
   def index
-    @services = Service.all
+    user = current_user
+    @services = user.services
   end
 
   # GET /services/1
@@ -25,9 +26,10 @@ class ServicesController < ApplicationController
   # POST /services.json
   def create
     @service = Service.new(service_params)
+    current_user.services << @service
 
     respond_to do |format|
-      if @service.save
+      if @service.save && current_user.save
         format.html { redirect_to @service, notice: 'Service was successfully created.' }
         format.json { render :show, status: :created, location: @service }
       else

@@ -5,10 +5,11 @@
     </ul>
   </div>
   <div class="top-bar-right">
-    <ul class="menu">
+    <ul class="menu dropdown" data-dropdown-menu>
       <% if user_signed_in? %>
         <li><%= link_to "Schedules", schedules_url %></li>
         <li><%= link_to "Epgs", epgs_url %></li>
+        <%= render "services/dropdown" %>
         <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
       <% else %>
         <li><%= link_to "Sign up", user_session_path, class: "button" %></li>

@@ -1,7 +1,5 @@
 <h1>Schedules</h1>
 
-<%= render 'layouts/listings' %>
-
 <ul>
   <% @schedules.each do |schedule| %>
       <li><%= link_to schedule.date, schedule  %></li>
