@@ -1,0 +1,11 @@
+<% number_of_listings_slides.times do |slide| %>
+  <li class="<%= "is-active" if slide == 0 %> orbit-slide">
+    <div class="list-times text-center">
+      <div class="grid-x">
+
+        <%= render 'schedules/listing_cell', slide: slide %>
+
+      </div>
+    </div>
+  </li>
+<% end %>
