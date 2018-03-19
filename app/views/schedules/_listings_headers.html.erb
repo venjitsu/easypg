@@ -1,11 +1,9 @@
-<% number_of_listings_slides.times do |slide| %>
-  <li class="<%= "is-active" if slide == 0 %> orbit-slide">
-    <div class="list-times text-center">
-      <div class="grid-x">
-
-        <%= render 'schedules/listing_cell', slide: slide %>
-
+<li class="orbit-slide <%= "is-active" if slide == 0 %>">
+  <div class="list-times text-center grid-x">
+    <% 4.times do |counter| %>
+      <div class="cell small-3">
+        <%= clock_time hours_in_thirty_mins[(counter + (slide * 4))] %>
       </div>
-    </div>
-  </li>
-<% end %>
+    <% end %>
+  </div>
+</li>
