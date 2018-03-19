@@ -4,9 +4,11 @@
     <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
   
   <% number_of_listings_slides.times do |slide| %>
-    <%= render 'schedules/listings_headers', slide: slide %>
+    <li class="orbit-slide <%= "is-active" if slide == 0 %>">
+      <%= render 'schedules/listings_headers', slide: slide %>
+      <%= render 'schedules/listings_info', slide: slide %>
+    </li>
   <% end %>
-
   </ul>
 
   <nav class="orbit-bullets">

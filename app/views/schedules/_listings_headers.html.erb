@@ -1,9 +1,7 @@
-<li class="orbit-slide <%= "is-active" if slide == 0 %>">
-  <div class="list-times text-center grid-x">
-    <% 4.times do |counter| %>
-      <div class="cell small-3">
-        <%= clock_time hours_in_thirty_mins[(counter + (slide * 4))] %>
-      </div>
-    <% end %>
-  </div>
-</li>
+<div class="list-times grid-x">
+  <% 4.times do |counter| %>
+    <div class="cell small-3">
+      <%= clock_time hours_in_thirty_mins[(counter + (slide * 4))] %>
+    </div>
+  <% end %>
+</div>
